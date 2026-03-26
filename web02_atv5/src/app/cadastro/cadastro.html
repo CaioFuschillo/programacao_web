@@ -1,0 +1,28 @@
+<h3>Área de Cadastro</h3>
+Para comprar em nossa loja, realize o cadastro abaixo.
+<br>
+Caso já tenha, vá para área de login:
+<a href="login/">Login</a>
+<br><br>
+<div class="input">
+    Nome: <input type="text" [(ngModel)]="cliente.nome" placeholder="digite seu nome completo" />
+    <br><br>
+    CPF: <input type="text" [(ngModel)]="cliente.cpf" placeholder="digite seu cpf" />
+    <br><br>
+    Data de nascimento: <input type="text" [(ngModel)]="cliente.dataNascimento" placeholder="data de nascimento" />
+    <br><br>
+    Telefone: <input type="text" [(ngModel)]="cliente.telefone" placeholder="digite seu numero"/>
+    <br><br>
+    CEP: <input type="text" [(ngModel)]="cliente.cep"  placeholder="digite seu cep" />
+    <br><br>
+    Endereço: <input type="text" [(ngModel)]="cliente.logradouro" placeholder="digite seu endereco" />
+    Email: <input type="text" [(ngModel)]="cliente.email" placeholder="digite seu email " />
+</div>
+<br><br><br>
+<div class="btn-cadastrar">
+    <button (click)="cadastrar()">Cadastrar</button>
+</div>
+<div class="aviso">
+    <h4>{{mensagem}}</h4>
+</div>
+
